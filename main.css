@@ -1,134 +1,766 @@
+/*GENERAL SETTINGS*/
 @font-face{
+	
 	font-family:'raleway';
+	src:url('../fonds/JosefinSans-SemiBold.ttf');
 }
 body{
-    background:white;	
-	margin:auto;
-	width:100%;
-	font-family: Helvetica, Arial, sans-serif;
-}
-#topbanner{
-	height:120px;
-}
-.container{
-	display:block;
-	height:40px;
-	margin: 0 auto;
-	width:auto;
-	background-color:#f8f9fd;;
+	background:#fff;
+	color:#3f3f3f;
+	font:14px/28px arial;
+	font-family:'raleway',arial;
 	
 }
-.menuWH{
-	display:block;
-	height:40px;
-	margin:0 auto;
-	width:1000px;
+h1{
+	font-size:30px;
+	letter-spacing:0px;
+	margin-bottom:20px;
+	
 	
 }
-.menu{
-	height:40px;
-	width:1000px;
-	display:block;
-	padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 15px;
-	font-family: Helvetica, Arial, sans-serif;	
-	line-height: 30px;
+#mainCaption p{
+	font-size:18px;
+	
 }
 
-.menu li{
-	display:block;
-	margin-right: 25px;	
-	float:left;
-}
-.menu li a{
-	padding:0px 0px;
-	text-decoration:none;
-	color: #8d94ad;
-    transition: .2s ease;
-}
-.menu li a:hover{
-	color:#ff6600;
-}
-.menu1{
-	display:block;
-	float:right;
-	position:relative;
-	left:20px;
-}
-.menu1 li.iconHU a  {
-	display:block;
-	font-family: Helvetica, Arial, sans-serif;
-}
-.menu1 li.iconHU i  {	
-    display:block;
-	background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 7px;
-    width: 22px;
-    height: 28px;
-    display: inline-block;
-    vertical-align: middle;	
-	font-size:22px;
-}
-.menu1 .s{
+
+.sectionHeader{
+	background:#993333;
+	border-bottom:6px solid #A52A2A;
+    height:60px;
+	color:#FFFF;
 	display:inline-block;
-	color:black;
+	line-height:60px;
+	font-size:24px;
+	padding:5px 40px;
+	letter-spacing:2px;
+	margin-bottom:20px;
+	
+	
 }
-.menu1 h1{
-	display:block;
-	position:relative;
-	left:25px;
+h3{
+	font-size:16px;
+	
+    
 }
 
-/*TAPAZ section*/
-.tapMenu{
+.selectionArea{
+	padding:80px 0;
+	
+}
+/*GRID SETTINGS*/
+.container{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	
+}
+.featuresbody.container{
+	justify-content:space-between;
+	
+}
+.col3 {
+	flex-grow: 1;
+	width: 33.33%;
+}
+.col2 {
+	flex-grow: 1;
+	width: 50%;
+	padding:20px;
+	
+	
+}
+
+.enginebody.container{
+	justify-content:space-between;
+	
+}
+
+
+/*HOME SETTINGS*/
+header .logo{
+	margin-right:auto;
+	
+}
+header .logo img{
+	display:block;
+	height:70px;
+}
+.menu li{
+	float:left
+	
+}
+
+.menu li a{
+	padding: 27px 17px;
+    display:block;
+	text-decoration:none;
+	letter-spacing:2px;
+	color:#993333;	
+	transition:all.5s ease;
+    font-size:20px;
+    font-weight: bold;
+}
+.menu li:hover a{
+	background:#993333;
+    color:#e6e6e6;
+  
+}
+
+#mainSlider{
+	height:87%;
+	background-image:url('../img/pexels-pixabay-104842.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;	
+	background-size:cover;	
+	object-fit:contain;
+	
+ 
+  
+	
+	
+}
+.slider{
+	width:100%;
+}
+
+#mainCaption{
+	height:87%;
+}
+
+
+.caption{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+	color:#fff;
+	
+}
+.featuresTop p{
+	color:#993333;
+	font-size:18px;
+}
+.engineTop p{
+	color:#993333;
+	font-size:18px;
+}
+.featuresTop{
+	text-align:center;
+     
+	
+}
+.item{
+	padding:10px 20px;
+	
+}
+.zoom{
+	position:relative;
+    overflow:hidden;
+	display:inline-block;
+	width:100%;
+	vertical-align:top;
+}
+.zoom img{
+	display:block;
+	width:100%;
+	height:auto;
+	transition:all .5s ease;
+}
+.item .itemText{
+	text-align:center;
+	padding:5px;
+	border:1px solid #993333;
+	
+}
+.item:hover .zoom img{
+	transform:scale(1.25);
+	
+}
+.item:hover h3{
+	color:#FFFF;
+	font-size:18px;
+	transition:all .5s ease;
+	
+}
+
+.item:hover .itemText{
+	background:	#993333;
+	color:#ffff;
+	transition:all .5s ease;
+}
+
+.btmDetails{
+	color:#993333;
+	padding:5px 10px;
+	text-decoration:none;
+	border:1px solid #993333;
+	transition:all .5s ease;
+}
+
+.item:hover .btmDetails{
+	color:#fff;
+	border:1px solid #fff;	
+	font-size:16px;
+	transition:all .5s ease;
+	
+}
+
+.itemText p{
+	margin:20px 0;
+	
+}
+
+
+
+
+
+
+#parallax{	
+    background-image:url('../img/1515310.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;	
+	background-size:cover;	
+	object-fit:contain;
+	text-align:center
+	
+}
+
+#parallax p{
+	color:white;
+	font-size:18px;
+}
+.engineTop{
+	text-align:center;
+}
+
+.enginecontainer{
+	position:relative;
+	width:100%;
+}
+.imageover{
+	display:block;
+	width:100%;
+	height:auto;
+}
+.enginoverlay{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgba(97, 124, 106, 0.6);
+	overflow:hidden;
+	width:0;
+	height:100%;
+	transition: .5s ease;
+}
+
+.enginecontainer:hover .enginoverlay{
+	width:100%;
+}
+.engintext{
+	white-space:nowrap;
+	color:white;
+	font-size:20px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.enginoverlay2{
+	position:absolute;
+	bottom:0;
+	left:100%;
+	right:0;
+	background-color:rgba(97, 124, 106, 0.6);
+	overflow:hidden;
+	width:0;
+	height:100%;
+	transition: .5s ease;
+}
+.enginecontainer:hover .enginoverlay2{
+	width:100%;
+	left:0;
+}
+
+
+
+footer{
+	background:	#993333;
+	text-align:center;
+}
+.footerItem{
+	padding:20px;
+}
+
+.footerItem img{
+	height:40px;
+	opacity:.8;
+	margin:20px ;
+}
+
+footer h3{
+	color:white;
+	font-size:18px;
+	letter-spacing:2px;
+	margin-bottom:10px;
+}
+
+footer .fa{
+	font-size:30px;
+	color:	#808080;
+	line-height:20px;
+	transition:.3s ease;
+}
+
+
+
+footer .fa:hover{
+	color:white;
+}
+
+
+footer p{
+	color:white;
+	
+}
+.footerLinks a{
+	text-decoration:none;
+	color:#808080;
+	letter-spacing:2px;
+	transition:.3s ease;
+}
+
+.footerLinks a:hover{
+	text-decoration:underline;
+	color:white;
+	
+}
+
+.socialLinks li{
+	display:inline-block;
+	width:50px;
+	height:50px;
+	
+}
+/*MOTORCYCLE SETTINGS*/
+
+#motSlider{
+	height:300px;
+	background-image:url('../img/motorcycle-shipping-company.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;	
+	background-size:cover;	
+	object-fit:contain;
+	
+ 
+  
+	
+	
+}
+
+
+#motCaption{
+	height:300px;
+	background:rgba(97, 124, 106, 0.5);
+	
+	
+}
+#motCaption h1{
+	font-size:45px;
+		
+}
+#motCaption{
+	font-size:18px;
+		
+}
+#inspect{
+	background:rgba(97, 124, 106, 0.2);
+}
+
+.inspectTop{
+	text-align:center;
+}
+.inspectTop p{
+	font-size:18px;
+	margin-bottom:40px;
+}
+.sectionHeader{
+	margin-top:50px;
+}
+.inspectBody .col2{
+	display:flex;
+}
+.inspectImage{
+	width:40%;
+}
+.inspectImage img{
+	width:100%;
+	height: auto;
+}
+.inspectText{
+	width:60%;
+	padding-left:10px;
+	
+}
+.data{
+	color:black;
+	font-size:12px;
+	font-style:italic;
+}
+h4{
+	color:#993333;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.inspectText a{
+	float:right;
+	text-decoration:none;
+	color:#993333;
+	
+}
+
+.projectXTop{
+	text-align:center;
+}
+.projectXTop p{
+	font-size:18px;
+	margin-bottom:40px;
+}
+
+#projectX .containerFluid{
+	height:500px;
+	background-image:url('../img/moto6.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;	
+	background-size:cover;	
+	object-fit:contain;
+	
+	
+}
+
+.captionPX {
+	display:flex;
+	height:500px;
+	background:rgba(97, 124, 106, 0.3);
+	width:100%;
+	
+}
+
+.projectXInfo{
+	position:relative;
+	top:50%;
+	left:50%;
+	margin-left:5%;
+	padding:5%;
+	transform:translate(-50%, -50%);
+}
+.projectXTitle{
+	font-size:24px;
+	letter-spacing:2px;
+	margin-bottom:20px;
+	
+	
+}
+
+.projectXBTN{
+	background-color:#993333;
+	cursor:pointer;
+	color:white;
+	padding:20px 40px;
+	border:none;
+	margin-top:20px;
+	transition:all .5s ease;
+}
+
+
+.projectXBTN:hover{
+	background-color:white;
+	color:#993333;
+	
+}
+
+.projectXText{
+	color: white;
+	font-size:16px;
+}
+
+.projectXHighlight{
+	display:inline-block;
+	background-color:#993333;
+	padding:30px;
+}
+
+
+.containerFluid .col2{
+	padding: 0;
+	
+}
+
+.projectXDetail{
+	color:white;
+}
+
+/*ABOUT SETTINGS*/
+
+#aboutSlider{
+	height:300px;
+	background-image:url('../img/mmm.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;	
+	background-size:cover;	
+	object-fit:contain;
+	
+ 
+  
+	
+	
+}
+
+
+#aboutCaption{
+	height:300px;
+	background:rgba(97, 124, 106, 0.5);
+	
+	
+}
+
+#aboutCaption p{
+	font-size: 18px;
+	
+}
+#aboutCaption h1{
+	font-size: 48px;
+	
+}
+#ourHistory{
+	background-color:#d6d6c2;
+}
+.ourHistoryTop{
+	text-align:center;
+	margin-top:50px;
+}
+
+#ourHistory .ourHistoryTop p{
+	font-size:18px;
+	margin-bottom:40px;
+}
+
+.ourHistoryBody .containerFluid{
+	display:flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	
+}
+.ourHistoryBody .col2{
+	display:flex;
+}
+.ourHistoryData{
+	flex:1;
+	text-align:center;
+	background-color:#993333;
+	color:white;
+}
+
+.ourHistoryData p{
+	font-size:30px;
+	letter-spacing:2px;
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+.ourHistoryImage{
+	flex:2;
+}
+
+.ourHistoryImage img{
+	width:100%;
+	height:100%;
+}
+
+.ourHistoryText{
+	flex:2;
+	margin-left:10px;
+}
+
+..ourHistoryText p{
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+.teamTop{
+	text-align:center;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.teamTop p{
+	font-size:18px;
+}
+.teamBody .containerFluid{
+	display:flex;
+	width:100%;
+}
+.teamMember{
+	position:relative;
+	width:100%;
+}
+.teamMemberImg{
+    display:block;
+	width:100%;
+	height:100%;
+}
+.teamMemberOverlay{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	opacity:1;
+	background-color: rgba(80,13,22,.9);
+	transition: .5s ease;
+}
+
+.teamMember:hover .teamMemberOverlay{
+	opacity:0;
+}
+.teamMember:hover .teamMemberInfo, .teamTitle{
+	color:white;
+	font-size:20px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+.teamMemberInfo{
+	color:white;
+	background-color:rgba(80,13,22,.5);
+	position:absolute;
+	top:0%;
+	left:50%;
+	transform:translateX(-50%);
+	transition: .5s ease;
+	padding:20px;
+	text-align:center;
+}
+.memberSocialLinks{
+	text-align:center;
+}
+.memberSocialLinks li{
+	display:inline;
+	margin-left:5px;
+	margin-right:5px;
+}
+.memberSocialLinks .fa{
+	color:white;
+}
+
+
+/*CONTACT SETTINGS*/
+
+#contactSlider{
+	height:300px;
+	background-image:url('../img/motocontact.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;	
+	background-size:cover;	
+	object-fit:contain;
+}
+#contactCaption{
+	height:300px;
+	background:rgba(97, 124, 106, 0.5);
+}
+#gallery{
+	background-color:#dcdcbc;
+}
+#contactCaption p{
+	font-size: 18px;
+	
+}
+#contactCaption h1{
+	font-size: 48px;
+	
+}
+.galleryTop{
+	text-align:center;
+	font-size:18px;
+}
+.contactTop{
+	text-align:center;
+	font-size:18px;
+}
+.gallerySlider{
+	overflow:hidden;
+	width:100%;
+	margin:0 auto;
+}
+.gallerySliderItem{
+	width:300%;
+	position:relative;
+	left:0;
+	animation:slideAnimation 30s infinite;
+}
+.gallerySliderItem img{
+	width:33.33%;
+	float:left;
+	height:auto;
+	
+}
+@keyframes slideAnimation{
+	0%{left:0;}
+	25%{left:-100%;}
+	50%{left:-200%;}
+	75%{left:-100%;}
+	100%{left:0;}
+}
+.wrapper{
 	margin:0 auto;
 	width:100%;
-	height:70px;
-	background-color:#ff4f08;
 }
-.tapaz{
+
+.contactForm{
 	margin:0 auto;
-	height:70px;
-	width:1000px;
+	width:60%;
 }
-.tappostion{
-	margin:0 auto;
-	height:70px;
-	width:1000px;
+.formItem{
+    margin-bottom:10px;
+	width:100%;
 }
-.tapaz .tappostion{
-	display:flex;
+.formShape{
+	color:white;
+	float:left;
+	background:#993333;
+	padding:8px;
+	width:8%;
+	text-align:center;
 }
-.tapaz .tappostion #Tp{
-	margin-right:auto;
-	padding-top:18px;
-}
-.tapaz .tappostion #Yp{	
-	padding-top:11px;
-}
-#tapA{
-	display:flex;
-	align-items:center;
-	height:70px;
-	width:618.95px;
-	
-}
-.tbox-search{
+
+.formField{
+	color:white;
+	background:#993333;
 	border:none;
-	height:40px;
-	width:387.95px;
-	padding-left:10px;
-	border-radius:8px;
-	font-size:14px;	
-	outline:none;
-	
+	padding:15.5px;
+	width:92%;
+	display:block;
+	font-size:14px;
 }
-::placeholder{
-	color:#8d94ad;
-	
-	
+.formBtn{
+	display:block;
+	border:none;
+	background:#993333;
+	color:white;
+	padding:12px 25px;
+	cursor:pointer;
+	text-decoration:none;
+	font-weight:blod;
+}
+.formBtn:hover{
+	background:#4d0000;
 }
 
 
@@ -138,12 +770,141 @@ body{
 
 
 /*MEDIA QUERIES*/
+@media screen and (max-width: 960px){
+h1{
+	font-size:25px;
+}
+header .container .menu a{
+	font-size:19px;
+	
+}
+#mainCaption p{
+	font-size:16px;
+}
+footer h3{
+	font-size:16px;
+}
+#motCaption h1{
+	font-size:35px;
+}
+#motCaption{
+	font-size:16px;
+}
+.inspectBody .container{
+	flex-direction:column;
+}
+.inspectBody .container .col2{
+	width:100%;
+}
+.ourHistoryBody .col2{
+	flex-direction:column;
+	width:100%;
+	margin-left:10px;
+	margin-right:10px;
+}
+#aboutCaption p{
+	font-size: 16px;
+}
+#aboutCaption h1{
+	font-size: 38px;
+}
+#contactCaption p{
+	font-size: 16px;
+}
+#contactCaption h1{
+	font-size: 38px;
+}
 
-@media screen and (max-width: 1040px){
+}
+@media screen and (max-width: 720px){
 
+h1{
+	
+	font-size:19px;
+}
+#mainCaption p{
+	font-size:12px;
+}
+footer h3{
+	font-size:14px;
+}
+#motCaption h1{
+	font-size:25px;
+}
+#motCaption{
+	font-size:14px;
+}
+header .container .menu a{
+	font-size:18px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+header .container{
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+header .logo{
+	margin:0 auto;
+}
+.featuresbody .container{
+	flex-direction:column;
+}
+.featuresbody .container .col3{
+	width:80%;
+	margin: 0 auto;
+}
+.enginebody .container{
+	flex-direction:column;
+}
+.enginebody .container .col2{
+	width:80%;
+	margin: 0 auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+footer .container{
+	flex-direction:column;
+}
 
-body{
-	width:1040px;
+footer .container .col3{
+	width:100%;
+}
+.sectionHeader{
+	font-size:18px;
+	
+}
+.inspectBody .container .col2{
+	padding-left: 0;
+	padding-right: 0;
+}
+.teamMemberInfo{
+	font-size:14px;
+	padding:10px;
+}
+.teamTitle{
+	font-size:14px;
+	
+}
+.formShape{
+	display:none;
+}
+
+@media screen and (max-width: 540px){
+
+h1{
+	color:red;
+	font-size:18px;
+}
+header .container .menu a{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+header .container .menu a{
+	font-size:16px;
+	padding-left: 2px;
+	padding-right: 2px;
 }
 
 
@@ -153,18 +914,56 @@ body{
 
 
 
-}
-@media screen and (max-width: 795px){
-
-
-
-
-
-
-
-
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
